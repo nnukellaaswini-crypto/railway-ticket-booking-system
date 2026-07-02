@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Ticket Booking</title>
+</head>
+<body bgcolor="#f0f8ff">
+
+    <h1 align="center">🚆 Railway Ticket Booking System</h1>
+    <hr>
+
+    <form>
+
+        <fieldset>
+            <legend><b>Passenger Details</b></legend>
+
+            <label>Full Name:</label><br>
+            <input type="text" placeholder="Enter Full Name" required><br><br>
+
+            <label>Age:</label><br>
+            <input type="number" min="1" max="120" required><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+            <br><br>
+
+            <label>Mobile Number:</label><br>
+            <input type="tel" placeholder="Enter Mobile Number"><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" placeholder="Enter Email"><br><br>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><b>Journey Details</b></legend>
+
+            <label>From Station:</label><br>
+            <input type="text" placeholder="Source Station"><br><br>
+
+            <label>To Station:</label><br>
+            <input type="text" placeholder="Destination Station"><br><br>
+
+            <label>Journey Date:</label><br>
+            <input type="date"><br><br>
+
+            <label>Train:</label><br>
+            <select>
+                <option>Select Train</option>
+                <option>Rajdhani Express</option>
+                <option>Shatabdi Express</option>
+                <option>Duronto Express</option>
+                <option>Vande Bharat Express</option>
+                <option>Garib Rath Express</option>
+            </select>
+            <br><br>
+
+            <label>Class:</label><br>
+            <select>
+                <option>Select Class</option>
+                <option>First AC (1A)</option>
+                <option>Second AC (2A)</option>
+                <option>Third AC (3A)</option>
+                <option>Sleeper (SL)</option>
+                <option>General (GN)</option>
+            </select>
+
+            <br><br>
+
+            <label>Number of Passengers:</label><br>
+            <input type="number" min="1" max="6" value="1">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><b>Payment Details</b></legend>
+
+            <label>Payment Method:</label><br>
+
+            <input type="radio" name="payment"> UPI<br>
+            <input type="radio" name="payment"> Debit Card<br>
+            <input type="radio" name="payment"> Credit Card<br>
+            <input type="radio" name="payment"> Net Banking<br>
+
+        </fieldset>
+
+        <br>
+
+        <center>
+            <input type="submit" value="Book Ticket">
+            <input type="reset" value="Clear Form">
+        </center>
+
+    </form>
+
+    <hr>
+
+    <h2>Booking Instructions</h2>
+    <ul>
+        <li>Carry a valid photo ID during travel.</li>
+        <li>Arrive at the station at least 30 minutes before departure.</li>
+        <li>Check train timings before your journey.</li>
+        <li>Tickets are subject to railway rules and availability.</li>
+    </ul>
+
+</body>
+</html>
